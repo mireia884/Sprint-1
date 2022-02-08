@@ -361,7 +361,115 @@ h4{
   @media (min-width: 768px) and (max-width: 1024px) {
     
     /* CSS */
- 
+    .grid-container{
+        padding: 4%;
+        display: grid;
+        gap: 1%;
+        grid-template-rows: 17% 22% 60% 3%;
+        /* cambia el height de los div */
+        grid-template-areas: 
+            "navbar"
+            "header"
+            "contenedorGeneralPosts"
+            "footer";
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .logoImg{
+        width: 13%;
+    }
+
+    .caixaIconGeneral{
+       width: 100%;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+
+    .menuLinks{
+        flex-direction: column;
+        justify-content: center;
+        height: 65%;
+    }
+
+    .caixaXarxes{
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 8%;
+        padding-left: 5%;
+    }
+
+    .icon{
+        width: 8%;
+    }
+
+    .iconXarxa{
+        width: 3%;
+    }
+
+
+     h1{
+         font-size: 1.9rem;
+     }
+
+     .heroText{
+         height: 44%;
+         width: 70%;
+         padding-top: 8%;
+     }
+
+       /* caja posts tablet */
+
+       .contenedorGeneralPosts{
+        flex-direction: column;
+     }
+
+
+     .contenedorPosts{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 1.5%;
+     }
+
+     .caixaEntrada{
+         height: 10%;
+     }
+
+    p{
+        font-size: 14px;
+    }
+
+     .sidebar{
+         padding-top: 2%;
+        height: 12%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+    .textoSidebar{
+        width: 85%;
+         padding-top: 4%;
+    }
+
+    .columna{
+      width: 100%;
+      padding: 1.5%;
+    } 
+
+    .textoInferior{
+        padding-bottom: 5%;
+    }
+
+    h5{
+        font-size: 14px;
+    }
 
   }
 
