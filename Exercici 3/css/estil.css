@@ -1,0 +1,322 @@
+* {/* per no crear marges extres */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.contenidorGran{
+    height: 100vh;
+    background-color: lightblue;
+}
+
+.contenidor1{
+    width: 100%;
+    height: 45%;
+    margin-bottom: 2%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.contenidor2{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 2%;
+    background-color: black;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidor3{
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    padding: 2%;
+}
+
+.caixaGeneral1{
+    background-color: rgb(28, 86, 88);
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixaGeneral2{
+    background-color: rgb(172, 107, 23);
+    width: 100%;
+    height: 50%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* caixes dintre caixa 2 */
+.caixaGeneral3{
+    background-color: rgb(100, 91, 113);
+    width: 70%;
+    height: 80%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.caixaGeneral4{
+    background-color: rgb(104, 31, 49);
+    width: 30%;
+    height: 80%;
+    padding: 1.5%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* caixa dintre caixa 3 */
+.caixaGeneral5{
+    background-color: rgb(167, 146, 54);
+    width: 100%;
+    height: 100%;
+}
+
+.caixa1{
+    width: 20%;
+    height: 50%;
+    background-color: rgb(206, 118, 118);
+    margin: 2%;
+}
+
+.caixa2{
+    width: 60%;
+    height: 50%;
+    background-color: rgb(206, 118, 118);
+}
+
+.caixa3{
+    width: 20%;
+    height: 50%;
+    background-color: rgb(206, 118, 118);
+    margin: 2%;
+}
+
+.caixa4{
+    width: 100%;
+    height: 55%;
+    background-color: rgb(200, 199, 106);
+}
+
+.caixa5{
+    width: 45%;
+    height: 15%;
+    background-color: rgb(126, 173, 177);
+    margin: 1.5%;
+}
+
+.caixa6{
+    width: 93%;
+    height: 15%;
+    background-color: rgb(157, 175, 177);
+    margin: 1.5%;
+}
+
+
+.caixa7{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 5%;
+    background-color: rgb(224, 224, 120);
+}
+
+  /* Media queries
+   Tablets, Ipads
+   resolució 768px a 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    .contenidorGran{
+      background-color: white;
+    }
+
+    .contenidor1 {
+        height: 42%;
+        padding: 4%;
+        margin-bottom: 4%;
+    }
+
+    .caixaGeneral1{
+        height: 40%;
+        margin-bottom: 3%;
+    }
+
+    .caixaGeneral2{
+        height: 40%;
+    }
+
+    .caixa1{
+        height: 40%;
+    }
+
+    .caixa2{
+        height: 40%;
+    }
+
+    .caixa3{
+        height: 40%;
+    }
+
+    .caixa4{
+        height: 40%;
+    }
+
+    .contenidor2 {
+        height: 42%;
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4%;
+        background-color: rgb(235, 235, 43);
+    }
+
+    .caixaGeneral3{
+        width: 97%;
+        margin-bottom: 4%;
+        margin-right: 0%;
+    }
+
+    .caixaGeneral4{
+        width: 97%; 
+        padding:3%;
+    }
+
+    .contenidor3 {
+        padding: 5%;
+        height: 10%;
+    }
+    
+  }
+
+  /* Media queries 
+   móbils
+   resolució 320px a 480px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    /* CSS */
+    .contenidorGran{
+       background-color: white;
+    }
+
+    .contenidor1{
+        padding: 6%;
+        margin-bottom: 5%;
+    }
+
+    .caixaGeneral1{
+        height: 70%;
+        margin-bottom: 8%;
+        padding: 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixaGeneral2{
+        height: 30%;
+        padding: 8%;
+    }
+
+    .caixa1{
+        width: 100%;
+        margin-bottom: 6%;
+    }
+
+    .caixa2{
+        width: 100%;
+        margin-bottom: 6%;
+    }
+
+    .caixa3{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .caixa4{
+        height: 100%;
+        width: 100%;
+    }
+
+    .contenidor2{
+        height: 75%;
+        padding: 6%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        background-color: rgb(238, 238, 66);
+    }
+
+    .caixaGeneral3{
+        width: 100%;
+        height: 70%;
+        background-color: rgb(23, 75, 110);
+        margin-bottom: 8%;
+        padding: 8%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .caixaGeneral4{
+        width: 100%;
+        height: 30%;
+        padding: 8%;
+        background-color: rgb(202, 89, 48);
+    }
+
+    .caixa5{
+        background-color: rgb(90, 129, 200);
+        width: 100%;
+        margin-bottom: 6%;
+    }
+
+    .caixa6{
+        width: 100%;
+        background-color: rgb(156, 187, 245);
+    }
+
+    .caixa7{
+        height: 30%;
+        background-color: rgb(255, 162, 129);
+    }
+
+    .contenidor3{
+        width: 100%;
+        padding: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caixaGeneral5{
+        height: 80%;
+        background-color: rgb(219, 221, 115);
+    }
+
+
+  }
+
+  
+
+
+ 

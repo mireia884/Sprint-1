@@ -1,0 +1,222 @@
+* {/* per no crear marges extres */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.contenidorGran{
+    height: 100vh;
+    padding: 4%;
+}
+
+.header{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logoImg{
+    width: 8.5%;
+    cursor: pointer;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
+a{
+    text-decoration: none;
+    color: rgba(58, 56, 56, 0.767);
+}
+
+.menuLinks{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+.icon{
+    width: 14%;
+    margin-right: 6%;
+}
+
+.icon:hover{
+    cursor: pointer;
+    animation: flash; 
+    animation-duration: 1.6s; 
+}
+
+.effectMenu:hover{
+    animation: fadeIn; 
+    animation-duration: 1.6s; 
+}
+
+.caixaIconGeneral{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.caixaIcon{
+    width: 40%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.caixaXarxes{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.iconXarxa{
+    width: 12%;
+    margin-right: 12%;
+    cursor: pointer;
+}
+
+.iconXarxa:hover{
+    animation: pulse; 
+    animation-duration: 1.6s; 
+}
+
+/* hero image */
+h1{
+    font-size: 2rem;
+    color: rgb(218, 93, 47);
+}
+
+.heroImg{
+ width: 100%;
+ height: 60%;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ background-image: url("../img/header.jpg");
+ background-repeat: no-repeat;
+ background-origin: content-box;
+ background-position: 50% 58%;
+}
+
+.heroText{
+    width: 80%;
+    height: 40%;
+    background-color: rgba(189, 195, 199, 1);
+    opacity: 0.7;
+    display: flex;
+    padding-top: 2%;
+    justify-content: center;
+    font-family: 'Lora', serif;
+}
+
+
+  /* Media queries
+   Tablets, Ipads
+   resolució 768px a 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    .header{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuLinks{
+        flex-wrap: wrap;
+        height: 62%;
+    }
+
+    .logoImg{
+        width: 14%;
+        margin-bottom: 2%;
+    } 
+
+    .caixaIconGeneral{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroImg{
+        height: 40%;
+    }
+
+    .heroText{
+        width: 76%;
+        height: 45%;
+        padding-left: 8%;
+    }
+
+    .caixaXarxes {
+        width: 88%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .iconXarxa{
+        width: 4%;
+        margin-right: 4%;
+    }
+    
+  }
+
+  /* Media queries 
+   móbils
+   resolució 320px a 480px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    /* CSS */
+    .header{
+        flex-direction: column;
+        height: 50%;
+    }
+
+    .logoImg{
+        width: 17%;
+    }
+
+    .menuLinks{
+        flex-wrap: wrap;
+        height: 70%;
+        align-items: flex-end;
+    }
+
+    .caixaIconGeneral{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .caixaXarxes{
+        width: 34%;
+        justify-content: center;
+    }
+
+    .heroImg{
+        height: 42%;
+        background-position: 50% 60%;
+    }
+
+    .heroText{
+        width: 76%;
+        height: 50%;
+        padding-left: 8%;
+    }
+
+  }

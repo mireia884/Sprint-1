@@ -1,0 +1,563 @@
+* {/* per no crear marges extres */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.contenidorGran{
+    height: 100vh;
+    padding: 4%;
+}
+
+.header{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logoImg{
+    width: 8.5%;
+    cursor: pointer;
+    animation: bounce 2s ease-in;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
+a{
+    text-decoration: none;
+    color: rgba(58, 56, 56, 0.767);
+}
+
+.menuLinks{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+.icon{
+    width: 14%;
+    margin-right: 6%;
+    animation: zoom 1s ease-in;
+}
+
+.icon:hover{
+    cursor: pointer;
+    animation: flash; 
+    animation-duration: 1.6s; 
+}
+
+.effectMenu:hover{
+    animation: fadeIn; 
+    animation-duration: 1.6s; 
+}
+
+.caixaIconGeneral{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.caixaIcon{
+    width: 40%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.caixaXarxes{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.iconXarxa{
+    width: 12%;
+    margin-right: 12%;
+    cursor: pointer;
+}
+
+.iconXarxa:hover{
+    animation: pulse; 
+    animation-duration: 1.6s; 
+}
+
+/* hero image */
+h1{
+    font-size: 2rem;
+    color: rgb(218, 93, 47);
+}
+
+.heroImg{
+ width: 100%;
+ height: 60%;
+ margin-bottom: 1.5%;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ background-image: url("../img/header.jpg");
+ background-repeat: no-repeat;
+ background-origin: content-box;
+ background-position: 50% 58%;
+ animation: moureAdalt 1.2s ease-in;
+}
+
+.heroText{
+    width: 80%;
+    height: 40%;
+    background-color: rgba(189, 195, 199, 1);
+    opacity: 0.7;
+    display: flex;
+    padding-top: 2%;
+    justify-content: center;
+    font-family: 'Lora', serif;
+}
+
+.caixaGeneralPost{
+    width: 100%;
+    height: 1200px;
+    background-color: rgb(211, 209, 209);
+    padding: 1.5%;
+    display: flex;
+    animation: moureEsquerra 1s ease-in;
+}
+
+.caixaPosts{
+    width: 70%;
+    height: 100%;
+    margin-right: 1.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caixaDreta{
+    width: 29%;
+    height: 100%;
+}
+
+.post{
+    width: 50%;
+    height: 45%;
+    margin-right: 2%;
+    padding: 1.5%;
+    background-color: white;
+}
+
+.post2{
+    width: 48%;
+    height: 45%;
+    padding: 1.5%;
+    background-color: white;
+}
+
+
+.contenidorSubtitol{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.contenidorDescripcio{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+    text-align: center;
+}
+
+.textDescripcio{
+    font-size: 18px;
+}
+
+/* contingut caixes posts */
+
+.contenidorImg{
+   width: 100%;
+   height: 40%;
+   display: flex;
+   align-items: flex-end;
+   margin-bottom: 2%;
+   background-image: url("../img/sakura.jpg");
+   background-origin: content-box;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.contenidorImg2{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2%;
+    background-image: url("../img/comida.jpg");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .contenidorImg3{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2%;
+    background-image: url("../img/fuji.jpg");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+ } 
+
+ .contenidorImg4{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2%;
+    background-image: url("../img/noche.jpg");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }  
+
+.caption{
+    padding-left: 2%;
+    font-size: 19px;
+    color: rgb(243, 243, 46);
+    opacity: 0.8;
+}
+
+.caixaEntrada{
+    padding-left: 2%;
+    width: 100%;
+   height: 8%;
+   background-color: rgb(236, 89, 114);
+   display: flex;
+   align-items: flex-end;
+   margin-bottom: 2%;
+}
+
+h4{
+  font-size: 24px;
+  font-family: 'Lora', serif;
+}
+
+.blanc{
+    color: white;
+}
+
+.negre{
+    color: black;
+}
+
+.caixaText{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.columna{
+    width: 47%;
+}
+
+.marginColumn{
+    margin-right: 6%;
+}
+
+.divLlegirMes{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: flex-end;
+}
+
+p{
+    font-size: 17px;
+    color: rgb(85, 70, 70);
+}
+
+.caixaTextInferior{
+    width: 100%;
+    font-weight: bold;
+    padding: 1.5%;
+    height: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.caixaFooter{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+  font-size: 24px;
+}
+
+h5{
+    font-size: 18px;
+    color: rgb(105, 100, 100);
+  }
+
+  /* animacions */
+@keyframes zoom {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes moureAdalt {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes moureEsquerra {
+    from {
+      transform: translateX(-100px);
+    }
+    to {
+      transform: translate(0);
+    }
+  }  
+
+li{
+    animation: zoom 1s ease-in;
+}
+
+
+
+  /* Media queries
+   Tablets, Ipads
+   resolució 768px a 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    .header{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuLinks{
+        flex-wrap: wrap;
+        height: 62%;
+    }
+
+    .logoImg{
+        width: 14%;
+        margin-bottom: 2%;
+    } 
+
+    .caixaIconGeneral{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroImg{
+        height: 34%;
+    }
+
+    .heroText{
+        width: 76%;
+        height: 45%;
+        padding-left: 8%;
+    }
+
+    .caixaXarxes {
+        width: 88%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .iconXarxa{
+        width: 4%;
+        margin-right: 4%;
+    }
+
+    .caixaGeneralPost{
+        flex-direction: column;
+        overflow: hidden; 
+    }
+
+    .caixaPosts{
+        width: 100%;
+        height: 90%;
+      /*  overflow: hidden; */
+    }
+
+    .caixaTextInferior{
+        height: 10%;
+    }
+
+    .caixaDreta{
+        width: 100%;
+        height: 12%;
+    }
+    .contenidorDescripcio{
+        overflow: hidden;
+    }
+
+    .contenidorSubtitol{
+        height: 27%;
+    }
+
+    .post{
+        height: 43%;
+    }
+
+    .post2{
+        height: 43%;
+    }
+    
+    p{
+        font-size: 15px;
+    }
+
+  }
+
+  /* Media queries 
+   móbils
+   resolució 320px a 480px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    /* CSS */
+    .header{
+        flex-direction: column;
+        height: 50%;
+    }
+
+    .logoImg{
+        width: 17%;
+    }
+
+    .menuLinks{
+        flex-wrap: wrap;
+        height: 70%;
+        align-items: flex-end;
+    }
+
+    .caixaIconGeneral{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .caixaXarxes{
+        width: 34%;
+        justify-content: center;
+    }
+
+    .heroImg{
+        height: 42%;
+        background-position: 50% 60%;
+    }
+
+    .heroText{
+        width: 76%;
+        height: 50%;
+        padding-left: 8%;
+    }
+
+    .caixaGeneralPost{
+        flex-direction: column;
+        height: 250vh;
+    }
+
+    .caixaDreta{
+        height: 9%;
+    }
+
+    .caixaPosts{
+        width: 100%;
+        height: 100%;
+    }
+
+    .caixaTextInferior{
+        height: 5%;
+    }
+
+    .caixaEntrada{
+        height: 10%;
+    }
+
+    .post{
+        width: 100%;
+        margin: 0%;
+        height: 22%;
+    }
+
+    .post2{
+        width: 100%;
+        height: 22%;
+    }
+
+    .caixaDreta{
+        width: 100%;
+    }
+
+    .contenidorSubtitol{
+        height: 25%;
+    }
+
+    p{
+        font-size: 12px;
+    }
+    
+    .contenidorSubtitol{
+        height: 30%;
+    }
+    .contenidorDescripcio{
+        height: 70%;
+    }
+
+    .columna{
+        width: 100%;
+        padding: 1.5%;
+      } 
+
+  }
